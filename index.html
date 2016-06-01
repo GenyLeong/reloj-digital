@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Reloj Digital</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container text-center">
+			<div class="row">				
+			<p id="hora" class="mt-21"></p>
+			<span id="dia"></span><span id="fecha"></span>
+			<div id="otros" class="mt-21">				
+			</div>
+			<button id="seleccionar" type="button" class="btn btn-primary mt-21 btn-large" data-toggle="modal" data-target="#myModal">Seleccionar</button>
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Selecciona una Región</h4>
+						</div>
+						<div class="modal-body text-left">
+							<p><input class="region" type="checkbox" value="0">México DC</p>
+							<p id="sao-paulo"><input class="region" type="checkbox" value="1">Sao Paulo</p>
+							<p id="washington-dc"><input class="region" type="checkbox" value="2">Washington DC</p>
+							<p id="madrid"><input class="region" type="checkbox" value="3">Madrid</p>
+							<p><input class="region" type="checkbox" value="4">Seúl</p>
+							<p><input class="region" type="checkbox" value="5">Toronto</p>
+							<p><input class="region" type="checkbox" value="6">Bogotá</p>
+							<p><input class="region" type="checkbox" value="7">Caracas</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div><!--container end-->
+			<script src="js/bootstrap.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>
